@@ -1,7 +1,18 @@
 usethis::use_package("ggplot2")
 usethis::use_package("magrittr")
 
+#' Paegel lab theme for ggplot graphics.
+#'
+#' Formats ggplot graphics in a consistent style for use in notebooks and publications.
+#' @return formatted plot
+#' @export
+#'
+#' @examples
+#' data <- tibble(min = 0:10,  Y = sin(min))
+#' data %>% ggplot() + aes(min, Y) + geom_line() + theme_pL()
+
 theme_pL <- function(){
+
     font <- "Helvetica"   #assign font family up front
 
     theme_bw() %+replace%    #replace elements we want to change

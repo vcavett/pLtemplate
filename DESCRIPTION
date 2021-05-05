@@ -8,12 +8,11 @@ Authors@R:
            email = "vcavett@uci.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: This package defines basic ggplot graphical styles used in the Paegel lab.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-Imports: 
+Depends: 
     ggplot2,
     magrittr
