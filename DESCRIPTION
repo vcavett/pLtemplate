@@ -2,12 +2,12 @@ Package: pLtemplate
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Val",
+           family = "Cavett",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "vcavett@uci.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This package defines basic ggplot graphical styles used in the Paegel lab.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
