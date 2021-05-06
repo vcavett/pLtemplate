@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# pLtemplate
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of pLtemplate is to provide a consistent theme for ggplot graphics in the Paegel lab.
+
+## Installation
+
+You can install pLtemplate from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("vcavett/pLtemplate")
+```
+## Example
+
+This is a sample scatter plot using the Paegel lab theme.
+
+```{r example}
+library(tidyverse)
+library(pLtemplate)
+
+data <- tibble(x = 0:100, y = sample(1:1000, 101, replace=TRUE))
+data %>% ggplot() + aes(x, y) + geom_point() + theme_pL()
+
+```
