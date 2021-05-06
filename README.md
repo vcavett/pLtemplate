@@ -43,8 +43,17 @@ library(pLtemplate)
 
 data <- tibble(x = 0:100, y = sample(1:1000, 101, replace=TRUE))
 
-data %>% ggplot() + aes(x, y) + geom_point() + theme_pL() + xlab("axis_label")
+data %>% ggplot() + 
+    aes(x, y) + 
+    geom_point() + 
+    xlab("axis_label") +
+    labs(title = "This is the main title",
+             subtitle = "with subtitle",
+             caption = "This is a random scatter plot prepared for theme demonstration.") +
+  theme_pL()
 ```
 
-<img src="man/figures/README-example-1.png" width="100%" /> Of note,
-this code works just fine if I do not have it in the Markdown file.
+<img src="man/figures/README-example-1.png" width="100%" />
+
+Some graphical elements will still need to be set manually (eg, axis
+breaks).

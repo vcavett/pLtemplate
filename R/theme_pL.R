@@ -38,7 +38,8 @@ theme_pL <- function(){
       plot.caption = ggplot2::element_text(           #caption
                    family = font,            #font family
                    size = 9,                 #font size
-                   hjust = 1),               #right align
+                   hjust = 0.5,
+                   vjust = -1),               #center align
 
       axis.title = ggplot2::element_text(             #axis titles
                    family = font,            #font family
