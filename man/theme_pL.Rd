@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_pL.R
 \name{theme_pL}
 \alias{theme_pL}
-\title{Paegel lab theme for ggplot graphics.}
+\title{Paegel lab theme for ggplot2 graphics.}
 \usage{
 theme_pL()
 }
@@ -10,9 +10,5 @@ theme_pL()
 formatted plot
 }
 \description{
-Formats ggplot graphics in a consistent style for use in notebooks and publications.
-}
-\examples{
-data <- tibble(min = 0:10,  Y = sin(min))
-data \%>\% ggplot() + aes(min, Y) + geom_line() + theme_pL()
+Formats ggplot2 graphics in a consistent style for use in notebooks and publications.
 }
