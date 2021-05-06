@@ -6,10 +6,9 @@
 #' @import magrittr
 #' @import ggplot2
 #'
-#' @example
-#' data <- tibble(x = 0:100, y = sin(x))
-#' @example
-#' ggplot() + aes(x, y) + geom_line() + theme_pL()
+#' @examples x = 0:100
+#' @examples y = sin(x)
+#' @examples ggplot() + aes(x, y) + geom_line() + theme_pL()
 
 theme_pL <- function(){
 

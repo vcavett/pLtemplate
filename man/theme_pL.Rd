@@ -12,3 +12,8 @@ formatted plot
 \description{
 Formats ggplot2 graphics in a consistent style for use in notebooks and publications.
 }
+\examples{
+x = 0:100
+y = sin(x)
+ggplot() + aes(x, y) + geom_line() + theme_pL()
+}
