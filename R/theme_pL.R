@@ -14,7 +14,7 @@ theme_pL <- function(){
 
     font <- "Helvetica"   #assign font family up front
 
-    ggplot2::theme_bw() + #%+replace%  #replace elements we want to change
+    ggplot2::theme_bw()  %+replace%  #replace elements we want to change
     ggplot2::theme(
       #grid elements
       panel.grid.major = ggplot2::element_blank(),    #strip major gridlines
