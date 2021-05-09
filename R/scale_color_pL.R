@@ -5,7 +5,7 @@
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_color_gradientn(), used respectively when discrete is TRUE or FALSE
-#' @details palette pL color palettes include "main", "cool", "hot", "mixed" and "grey"
+#' @details palette pL color palettes include "main", "cool", "hot", "mixed", "grey" and "all"
 #' @export
 #' @examples data <- tibble(x = 0:100,
 #'							 y = sample(1:1000, 101, replace=TRUE),

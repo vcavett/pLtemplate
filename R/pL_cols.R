@@ -17,6 +17,7 @@ pL_palettes <- list(
   `cool`  = pL_cols("blue", "green"),
   `hot`   = pL_cols("yellow", "orange", "red"),
   `mixed` = pL_cols("blue", "green", "yellow", "orange", "red"),
-  `grey`  = pL_cols("light grey", "dark grey")
+  `grey`  = pL_cols("light grey", "dark grey"),
+  `all`   = pL_cols("dark grey", "blue", "orange", "green", "yellow", "red", "light grey")
 )
 
