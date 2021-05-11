@@ -7,11 +7,11 @@
 #'            scale_color_gradientn(), used respectively when discrete is TRUE or FALSE
 #' @details palette pL color palettes include "main", "cool", "hot", "mixed", "grey" and "all"
 #' @export
-#' @examples data <- tibble(x = 0:100,
+#' @examples data <- tibble::tibble(x = 0:100,
 #'							 y = sample(1:1000, 101, replace=TRUE),
 #'							 z = sample(LETTERS[1:3], 101, replace = TRUE),
 #'							 a = sin(x))
-#' data %>% ggplot() +
+#' data %>% ggplot2::ggplot() +
 #'	aes(x, y,
 #'			col = z) +
 #'	geom_point(size= 3) +

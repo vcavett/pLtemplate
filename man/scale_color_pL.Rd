@@ -20,14 +20,14 @@ scale_color_gradientn(), used respectively when discrete is TRUE or FALSE}
 Color scale constructor for drsimonj colors
 }
 \details{
-palette pL color palettes include "main", "cool", "hot", "mixed" and "grey"
+palette pL color palettes include "main", "cool", "hot", "mixed", "grey" and "all"
 }
 \examples{
-data <- tibble(x = 0:100,
+data <- tibble::tibble(x = 0:100,
 						 y = sample(1:1000, 101, replace=TRUE),
 						 z = sample(LETTERS[1:3], 101, replace = TRUE),
 						 a = sin(x))
-data \%>\% ggplot() +
+data \%>\% ggplot2::ggplot() +
 aes(x, y,
 		col = z) +
 geom_point(size= 3) +
