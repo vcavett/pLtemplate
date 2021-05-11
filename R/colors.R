@@ -7,6 +7,6 @@ pL_colors <- c(
   `green`      = "#4cc082",
   `blue`       = "#4c8ac0",
   `orange`     = "#F47B39",
-  `yellow`     = "#f8ab81",
-  `light grey` = "#cecfce",
+  `yellow`     = "#f4d939",
+  `light grey` = "#e1e1e1",
   `dark grey`  = "#6C6D6C")
