@@ -1,6 +1,6 @@
 Package: pLtemplate
 Title: Paegel lab ggplot theme
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: 
     person(given = "Val",
            family = "Cavett",

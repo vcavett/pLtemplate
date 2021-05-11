@@ -1,4 +1,4 @@
-#' Color scale constructor for drsimonj colors
+#' Color scale constructor for pL colors
 #'
 #' @param palette Character name of palette in pL_palettes
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not

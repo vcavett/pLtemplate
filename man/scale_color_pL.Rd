@@ -2,7 +2,7 @@
 % Please edit documentation in R/scale_color_pL.R
 \name{scale_color_pL}
 \alias{scale_color_pL}
-\title{Color scale constructor for drsimonj colors}
+\title{Color scale constructor for pL colors}
 \usage{
 scale_color_pL(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 }
@@ -17,7 +17,7 @@ scale_color_pL(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 scale_color_gradientn(), used respectively when discrete is TRUE or FALSE}
 }
 \description{
-Color scale constructor for drsimonj colors
+Color scale constructor for pL colors
 }
 \details{
 palette pL color palettes include "main", "cool", "hot", "mixed", "grey" and "all"

@@ -12,7 +12,8 @@ scale_fill_pL <- function(palette = "main", discrete = TRUE, reverse = FALSE, ..
 
   if (discrete) {
     discrete_scale("fill", paste0("pL_", palette), palette = pal, ...)
-  } else {
+  }
+  else {
     scale_fill_gradientn(colours = pal(256), ...)
   }
 }
