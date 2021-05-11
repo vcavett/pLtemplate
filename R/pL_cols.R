@@ -18,6 +18,8 @@ pL_palettes <- list(
   `hot`   = pL_cols("yellow", "orange", "red"),
   `mixed` = pL_cols("blue", "green", "yellow", "orange", "red"),
   `grey`  = pL_cols("light grey", "dark grey"),
-  `all`   = pL_cols("dark grey", "blue", "orange", "green", "yellow", "red", "light grey")
+  `all`   = pL_cols("dark grey", "blue", "orange",
+                    "green", "yellow", "red", "light grey"),
+  `heat_map` = pL_cols("lightest grey", "darkest grey")
 )
 
