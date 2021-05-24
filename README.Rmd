@@ -32,8 +32,9 @@ devtools::install_github("vcavett/pLtemplate")
 This is a sample scatter plot using the Paegel lab theme.
 
 ```{r example}
-library(tibble)
+library(tidyverse)
 library(pLtemplate)
+library(scales)
 
 data <- tibble(x = 0:100,
 							 y = sample(1:1000, 101, replace=TRUE),
@@ -51,13 +52,31 @@ data %>% ggplot() +
   theme_pL() +
 	scale_color_pL()
 
-data %>% ggplot() +
+data %>% 
+	ggplot() +
 	aes(x, a) +
 	geom_line() +
+	scale_y_continuous(limits = c(-1,1), breaks = c(-1, 0, 1)) +
 	labs(title = "line plot example",
 			 subtitle = "with subtitle",
 			 caption = "and a small descriptive caption describing the data") +
 	theme_pL()
+
+data %>% 
+	group_by(z) %>% 
+	summarize(letters = n(),
+						err = letters - dim(data)[1] / n_distinct(data$z))  %>% 
+	ggplot() +
+	aes(x = z, 
+			y = letters) +
+	geom_col() + 
+	geom_errorbar(aes(ymin = letters - err,
+										ymax = letters + err),
+								width = 0.2) +
+	labs(title = "bar plot",
+			 subtitle = "by request") +
+	theme_pL() +
+	scale_fill_pL()
 
 ```
 
