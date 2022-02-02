@@ -43,7 +43,7 @@ theme_pL <- function(){
 
       axis.title = ggplot2::element_text(             #axis titles
                    family = font,            #font family
-                   size = 12,
+                   size = 14,
                    face = 'bold'),  #font size
 
       axis.title.y = ggplot2::element_text(margin = ggplot2::margin(10,10,10,10),
@@ -51,7 +51,7 @@ theme_pL <- function(){
 
       axis.text = ggplot2::element_text(              #axis text
                    family = font,            #axis famuly
-                   size = 9,
+                   size = 12,
                    margin = ggplot2::margin(3,3,3,3)),                #font size
 
       axis.text.x = ggplot2::element_text(            #margin for axis text
